@@ -1,0 +1,19 @@
+<h2 style="text-align: center;">Product list:</h2>
+
+
+<table class ="center">
+    <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Current Price</th>
+          <th> </th>
+    </tr>
+        <tr *ngFor="let product of products; index as i">
+            <td> {{product.no}}  </td>  
+            <td> {{product.name}} </td>
+            <td> {{product.price | currency:' Euro '}} </td>
+            <button (click)="placeBid(i)"> Bid </button>
+        </tr>  
+</table>
+
+

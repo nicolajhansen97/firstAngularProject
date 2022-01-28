@@ -1,0 +1,11 @@
+.links, .links a{
+    padding:10px;
+    text-align: center;
+}
+.links a.active {
+    background-color: lightgray
+}
+
+.header {
+    background-color:#C4C44E;
+}

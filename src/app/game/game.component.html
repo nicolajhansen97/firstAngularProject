@@ -1,0 +1,10 @@
+<div class="space">
+<h2 class="heading">Guess the number</h2>
+<hr>
+<div class="gamedesign">
+<input id="number">
+<button (click)="calculateNumber()">Play</button>
+<p>{{highOrLowerNumber}} <br><br> Current highscore: {{currentHighscore}} tries</p>
+<button *ngIf="gameDone" (click)="resetGame()">Reset game</button>
+</div>
+</div>
